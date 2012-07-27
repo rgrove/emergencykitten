@@ -1,6 +1,6 @@
-# Simple regex to turn Flickr's share HTML into YAML:
-# Find: ^<a href="([^"]+)" title="([^"]+)"><img src="([^"]+)".* alt="([^"]+)".*?$
-# Replace: - url: $1\n  title: "$2"\n  imageUrl: $3\n  imageAlt: "$4"\n
+# Simple regex to turn Flickr or SmugMug share HTML into YAML:
+# Find: ^<a href="([^"]+)" title="([^"]*)"><img src="([^"]+)".* alt="([^"]*)".*?$
+# Replace: - url: "$1"\n  title: "$2"\n  imageUrl: "$3"\n  imageAlt: "$4"\n
 
 ---
 - url: http://www.flickr.com/photos/seanmolin/7028040701/
@@ -182,3 +182,123 @@
   title: "Yin & Yang by geoftheref, on Flickr"
   imageUrl: http://farm4.staticflickr.com/3093/3227445097_aecc2f6f87_b.jpg
   imageAlt: "Yin & Yang"
+
+- url: "http://www.wendywilkersonphotography.com/Daily-Photos/Daily-Photos-2009/9114877_B8KXtz#!i=686463109&k=yBzsN&lb=1&s=A"
+  title: "October 19, 2009 - Max  - Had the kittens out in the yard today playing with them.  They were soo cute!!!"
+  imageUrl: http://www.wendywilkersonphotography.com/Daily-Photos/Daily-Photos-2009/DSC4084edit/686463109_yBzsN-L.jpg
+  imageAlt: "October 19, 2009 - Max  - Had the kittens out in the yard today playing with them.  They were soo cute!!!"
+
+- url: "http://www.lohrphoto.com/Photography/Honest-Critiques/16426338_3bdjDF#!i=1578008223&k=kvXrjsz&lb=1&s=A"
+  title: "Our new job site has an old garage that is filled with a litter of kittens...  Best day of work EVER! !"
+  imageUrl: "http://www.lohrphoto.com/Photography/Honest-Critiques/i-kvXrjsz/0/L/SEP6084-L.jpg"
+  imageAlt: "Our new job site has an old garage that is filled with a litter of kittens...  Best day of work EVER! !"
+
+- url: "http://beadzilla.smugmug.com/MyDailyPhotoJourney/BeadzillaPhotoCreations/15875155_xVHpBj#!i=1392710019&k=5SsL5Z9&lb=1&s=A"
+  title: "153/365July 16, 2011. My Daily Photo Journey Happy sleeping ginger kitten - newly named Buster by his adoptive parents.  Special thanks to Robin and Dan for letting me turn my lens to their new arrivals. Note: more kitten pictures from today are already posted in my gallery of animal photos =)Walnut Creek, Californiaedits: minorstats: #73 of 83 photos taken today"
+  imageUrl: "http://beadzilla.smugmug.com/MyDailyPhotoJourney/BeadzillaPhotoCreations/i-5SsL5Z9/0/L/7-16-11-073-Buster-L.jpg"
+  imageAlt: "153/365July 16, 2011. My Daily Photo Journey Happy sleeping ginger kitten - newly named Buster by his adoptive parents.  Special thanks to Robin and Dan for letting me turn my lens to their new arrivals. Note: more kitten pictures from today are already posted in my gallery of animal photos =)Walnut Creek, Californiaedits: minorstats: #73 of 83 photos taken today"
+
+- url: "http://studiobetts.smugmug.com/Photography/2009/9475156_zz9Nj9#!i=681033149&k=QBeLp&lb=1&s=A"
+  title: "Cat"
+  imageUrl: "http://studiobetts.smugmug.com/Photography/2009/DSCF2544/681033149_QBeLp-L.jpg"
+  imageAlt: "Cat"
+
+- url: "http://www.jmcqueenphoto.com/Cats/The-Barn-Kittens/9426914_pw6NH4#!i=632158278&k=BxTah&lb=1&s=A"
+  title: ""
+  imageUrl: "http://www.jmcqueenphoto.com/Cats/The-Barn-Kittens/Kittens-117a/632158278_BxTah-L.jpg"
+  imageAlt: ""
+
+- url: "http://psphotos.smugmug.com/Sherry-Shots/Fun-Stuff/Best-of-2008/7001069_P9QDdV#!i=329001105&k=WYXuF&lb=1&s=A"
+  title: "Cotton at 6 weeks old."
+  imageUrl: "http://psphotos.smugmug.com/Sherry-Shots/Fun-Stuff/Best-of-2008/p7077900-b/329001105_WYXuF-L-3.jpg"
+  imageAlt: "Cotton at 6 weeks old."
+
+- url: "http://www.jmcqueenphoto.com/Cats/The-Barn-Kittens/9426914_pw6NH4#!i=632312540&k=snCYU&lb=1&s=A"
+  title: ""
+  imageUrl: "http://www.jmcqueenphoto.com/Cats/The-Barn-Kittens/Kittens-116/632312540_snCYU-L.jpg"
+  imageAlt: ""
+
+- url: "http://www.jmcqueenphoto.com/Cats/The-Barn-Kittens/9426914_pw6NH4#!i=631997350&k=bb7br&lb=1&s=A"
+  title: ""
+  imageUrl: "http://www.jmcqueenphoto.com/Cats/The-Barn-Kittens/Kittens-213/631997350_bb7br-L.jpg"
+  imageAlt: ""
+
+- url: "http://www.lizstelphoto.com/Other/Pets/4691563_md6sD8#!i=277441849&k=E7ktx&lb=1&s=A"
+  title: "Photo & Video Sharing by SmugMug"
+  imageUrl: "http://www.lizstelphoto.com/Other/Pets/sneaky-cat-8x10/277441849_E7ktx-L.jpg"
+  imageAlt: "Photo & Video Sharing by SmugMug"
+
+- url: "http://www.jmcqueenphoto.com/Cats/The-Barn-Kittens/9426914_pw6NH4#!i=632311693&k=XaVN9&lb=1&s=A"
+  title: ""
+  imageUrl: "http://www.jmcqueenphoto.com/Cats/The-Barn-Kittens/Kittens-102a/632311693_XaVN9-L.jpg"
+  imageAlt: ""
+
+- url: "http://www.jmcqueenphoto.com/Cats/The-Barn-Kittens/9426914_pw6NH4#!i=631991709&k=Bn2qo&lb=1&s=A"
+  title: ""
+  imageUrl: "http://www.jmcqueenphoto.com/Cats/The-Barn-Kittens/Kittens-128/631991709_Bn2qo-L.jpg"
+  imageAlt: ""
+
+- url: "http://www.mattpilsner.com/Pets/Dynamo/3048103_7sJTnt#!i=165966958&k=SG2xQ&lb=1&s=A"
+  title: ""
+  imageUrl: "http://www.mattpilsner.com/Pets/Dynamo/DSC02325/165966958_SG2xQ-L-2.jpg"
+  imageAlt: ""
+
+- url: "http://psphotos.smugmug.com/Sherry-Shots/Nature/Abby-Kittens/5051866_9sQ4ds#!i=313053854&k=dfCTF&lb=1&s=A"
+  title: "Harry at 5 weeks old"
+  imageUrl: "http://psphotos.smugmug.com/Sherry-Shots/Nature/Abby-Kittens/P6147479-b/313053854_dfCTF-L-2.jpg"
+  imageAlt: "Harry at 5 weeks old"
+
+- url: "http://www.simoncochranephotography.com/Nature/The-Menagerie/23523345_BTthbK#!i=1902036815&k=v2JGkLC&lb=1&s=A"
+  title: "Moglet pretending to be Fruit."
+  imageUrl: "http://www.simoncochranephotography.com/Nature/The-Menagerie/i-v2JGkLC/0/L/MG3749-Edit-L.jpg"
+  imageAlt: "Moglet pretending to be Fruit."
+
+- url: "http://www.tsonka.com/Pets/Cats/3775560_3zDB3t#!i=217443552&k=9Ktdk&lb=1&s=A"
+  title: "Photo & Video Sharing by SmugMug"
+  imageUrl: "http://www.tsonka.com/Pets/Cats/Kitten/217443552_9Ktdk-L.jpg"
+  imageAlt: "Photo & Video Sharing by SmugMug"
+
+- url: "http://romuald.smugmug.com/Nature-Natura/empty/1997168_m2qm6F#!i=102022589&k=u9wBN&lb=1&s=A"
+  title: "Lonely kitten (Boruja Nowa, Poland).Samotny kotek (Boruja Nowa, Polska)."
+  imageUrl: "http://romuald.smugmug.com/Nature-Natura/empty/DSC1425/102022589_u9wBN-L.jpg"
+  imageAlt: "Lonely kitten (Boruja Nowa, Poland).Samotny kotek (Boruja Nowa, Polska)."
+
+- url: "http://www.aktpics.com/My-Galleries/Animals/njcattitudeorg-Cat-and-Kitten/4294311_H9zQ6d#!i=293613387&k=cUzj4&lb=1&s=A"
+  title: "5/11/2008: Alice and her 7 kittens."
+  imageUrl: "http://www.aktpics.com/My-Galleries/Animals/njcattitudeorg-Cat-and-Kitten/njcattitude2008051147/293613387_cUzj4-L.jpg"
+  imageAlt: "5/11/2008: Alice and her 7 kittens."
+
+- url: "http://www.quarkview.com/Animals/Cat-and-Dog-1/11544493_qmFFCJ#!i=814007549&k=fWGF2&lb=1&s=A"
+  title: "Mitha Malka: 2 month kitten nap"
+  imageUrl: "http://www.quarkview.com/Animals/Cat-and-Dog-1/empty/814007549_fWGF2-L-1.jpg"
+  imageAlt: "Mitha Malka: 2 month kitten nap"
+
+- url: "http://www.carllengyel.com/Pets/Kittens-Cats/9711733_mNRP4V#!i=657756269&k=W5nxT&lb=1&s=A"
+  title: "- Four black and gray tabby cat kittens."
+  imageUrl: "http://www.carllengyel.com/Pets/Kittens-Cats/2006Jun2Kittens/657756269_W5nxT-L-1.jpg"
+  imageAlt: "- Four black and gray tabby cat kittens."
+
+- url: "http://www.aktpics.com/My-Galleries/Animals/njcattitudeorg-Cat-and-Kitten/4294311_H9zQ6d#!i=265630171&k=SEtZt&lb=1&s=A"
+  title: "Christmas and her kittens: 03/13/2008 - 39 Days old."
+  imageUrl: "http://www.aktpics.com/My-Galleries/Animals/njcattitudeorg-Cat-and-Kitten/kittens2008031368/265630171_SEtZt-L.jpg"
+  imageAlt: "Christmas and her kittens: 03/13/2008 - 39 Days old."
+
+- url: "http://www.goldenstarphoto.com/Pet-Photography/Kitten-Scooter/4760138_c4H4B4#!i=282194948&k=vQWGM&lb=1&s=A"
+  title: ""
+  imageUrl: "http://www.goldenstarphoto.com/Pet-Photography/Kitten-Scooter/Star-and-Scooter-11/282194948_vQWGM-L-4.jpg"
+  imageAlt: ""
+
+- url: "http://www.aktpics.com/My-Galleries/Animals/njcattitudeorg-Cat-and-Kitten/4294311_H9zQ6d#!i=258270142&k=6KEhb&lb=1&s=A"
+  title: "Christmas and her kittens: Christmas and her kittens: 2/6/08 - 3 days old."
+  imageUrl: "http://www.aktpics.com/My-Galleries/Animals/njcattitudeorg-Cat-and-Kitten/Kittens200802064/258270142_6KEhb-L.jpg"
+  imageAlt: "Christmas and her kittens: Christmas and her kittens: 2/6/08 - 3 days old."
+
+- url: "http://www.sharkbayte.com/Photography/2011-Daily-Photos/15280496_QJTL2X#!i=1381656376&k=5xTsnPJ&lb=1&s=A"
+  title: "July 13, 2011-These are two of the kittens from a few days ago. Their mother moved all of them to the neighbor's house. Well that night we had a lot of rain, the next morning I found all four of the kittens back in my yard, inside a huge planter that was on it's side and off the ground, they are protected from the rain and the sun. The mother cat just amazes me.  Jasper my pup is not happy with the situation. (194:365)Thank you all so much for all the wonderful comments and response to my picture yesterday, it was overwhelming!"
+  imageUrl: "http://www.sharkbayte.com/Photography/2011-Daily-Photos/i-5xTsnPJ/0/L/20110712-MG0024-Edit-L.jpg"
+  imageAlt: "July 13, 2011-These are two of the kittens from a few days ago. Their mother moved all of them to the neighbor's house. Well that night we had a lot of rain, the next morning I found all four of the kittens back in my yard, inside a huge planter that was on it's side and off the ground, they are protected from the rain and the sun. The mother cat just amazes me.  Jasper my pup is not happy with the situation. (194:365)Thank you all so much for all the wonderful comments and response to my picture yesterday, it was overwhelming!"
+
+- url: "http://www.mattpilsner.com/Daily-Photos/Daily-Photos-2008/4108630_8FLxg7#!i=253292867&k=Lvsdo&lb=1&s=A"
+  title: "Feb 11, 2008   (1 of 2)Here's Mia playing in a chair.  I had a small photo shoot with her yesterday.  She's pretty quick, so it's very hard to get good shots of her.  She also kept sliding off the chair, and I kept putting her back because I thought the dark chair went well with her fur.  You all must think I put the macro lens down for 2 days, but you would be wrong.  Yesterday's and Today's photo were taken with the Macro lens.  It's a sweet piece of glass.There are some more cute photos of Mia HERE.I'm off today, so It will be a 2 photo day.  The second photo is "
+  imageUrl: "http://www.mattpilsner.com/Daily-Photos/Daily-Photos-2008/IMG4619/253292867_Lvsdo-L-1.jpg"
+  imageAlt: "Feb 11, 2008   (1 of 2)Here's Mia playing in a chair.  I had a small photo shoot with her yesterday.  She's pretty quick, so it's very hard to get good shots of her.  She also kept sliding off the chair, and I kept putting her back because I thought the dark chair went well with her fur.  You all must think I put the macro lens down for 2 days, but you would be wrong.  Yesterday's and Today's photo were taken with the Macro lens.  It's a sweet piece of glass.There are some more cute photos of Mia HERE.I'm off today, so It will be a 2 photo day.  The second photo is "
