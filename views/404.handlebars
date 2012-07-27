@@ -1,0 +1,15 @@
+<div class="centered">
+    <h1>404 Oh Noes!</h1>
+
+    <p>
+    We couldn't find <code>{{path}}</code>, but maybe you'll like this instead.
+    </p>
+
+    {{#kitten}}
+        <p>
+            <a href="{{url}}" title="{{title}}" class="kitten">
+                <img class="kitten-image" src="/img/{{id}}" alt="{{imageAlt}}">
+            </a>
+        </p>
+    {{/kitten}}
+</div>

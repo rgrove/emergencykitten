@@ -1,8 +1,23 @@
 html {
     background: #fff;
     color: #333;
+}
+
+body, input {
     font: 14px/1.4 Helvetica, sans-serif;
-    text-align: center;
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+a:hover { text-decoration: underline; }
+
+.centered { text-align: center; }
+
+.kitten-image {
+    min-height: 600px;
 }
 
 .license {
@@ -13,7 +28,13 @@ html {
 .license a {
     color: inherit;
     font-weight: bold;
-    text-decoration: none;
 }
 
-.license a:hover { text-decoration: underline; }
+.permalink { margin: 2em 0; }
+
+#permalink-input {
+    color: #888;
+    font-size: 12px;
+    width: 25em;
+    text-align: center;
+}

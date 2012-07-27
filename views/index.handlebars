@@ -1,11 +1,29 @@
-{{#kitten}}
-    <a href="{{url}}" title="{{title}}" class="kitten">
-        <img src="{{imageUrl}}" alt="{{imageAlt}}">
-    </a>
-{{/kitten}}
+<div class="centered">
+    {{#kitten}}
+        <p>
+            <a href="{{url}}" title="{{title}}" class="kitten">
+                <img class="kitten-image" src="/img/{{id}}" alt="{{imageAlt}}">
+            </a>
+        </p>
 
-<p class="license">
-    All photos are either under a <a href="http://creativecommons.org/licenses/">Creative Commons</a> license or were marked as shareable by their creators. Click on a photo to visit its original source.<br>
+        <p class="permalink">
+            Like this kitten? Here's a <a href="/kitten/{{id}}" rel="bookmark">permalink</a>!
 
-    Comments? I'm <a href="http://twitter.com/yaypie/">@yaypie</a> on Twitter. Complaints? Maybe you need <a href="/">another kitten</a>.
-</p>
+            <br>
+            <input id="permalink-input" readonly
+                value="http://www.emergencykitten.com/kitten/{{id}}">
+        </p>
+    {{/kitten}}
+</div>
+
+<script>
+(function (win, doc) {
+    doc.getElementById('permalink-input').addEventListener('focus', function () {
+        var el = this;
+
+        setTimeout(function () {
+            el.select();
+        }, 1);
+    }, false);
+}(this, document));
+</script>
