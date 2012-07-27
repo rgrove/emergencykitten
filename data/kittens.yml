@@ -1,0 +1,184 @@
+# Simple regex to turn Flickr's share HTML into YAML:
+# Find: ^<a href="([^"]+)" title="([^"]+)"><img src="([^"]+)".* alt="([^"]+)".*?$
+# Replace: - url: $1\n  title: "$2"\n  imageUrl: $3\n  imageAlt: "$4"\n
+
+---
+- url: http://www.flickr.com/photos/seanmolin/7028040701/
+  title: "Little Low-Light Monsters (D800 @ ISO 25,600) by Sean Molin Photography, on Flickr"
+  imageUrl: http://farm8.staticflickr.com/7239/7028040701_6de179d6fb_b.jpg
+  imageAlt: "Little Low-Light Monsters (D800 @ ISO 25,600)"
+
+- url: http://www.flickr.com/photos/merlijnhoek/3184818586/
+  title: "Muffin // Our new kitten by Merlijn Hoek, on Flickr"
+  imageUrl: http://farm4.staticflickr.com/3331/3184818586_4ff359c537_b.jpg
+  imageAlt: "Muffin // Out new kitten"
+
+- url: http://www.flickr.com/photos/merlijnhoek/2841785343/
+  title: "Crazy Kitten? // Nikkor 50mm 1.4 by Merlijn Hoek, on Flickr"
+  imageUrl: http://farm4.staticflickr.com/3033/2841785343_e166fb4396_b.jpg
+  imageAlt: "Crazy Kitten? // Nikkor 50mm 1.4"
+
+- url: http://www.flickr.com/photos/paolomargari/1992019542/
+  title: "...non fidarsi è meglio - my scared cat / gatto by Paolo Margari, on Flickr"
+  imageUrl: http://farm3.staticflickr.com/2306/1992019542_709ca81523_b.jpg
+  imageAlt: "...non fidarsi è meglio - my scared cat / gatto"
+
+- url: http://www.flickr.com/photos/difusa/135964682/
+  title: "Mel by Difusa, on Flickr"
+  imageUrl: http://farm1.staticflickr.com/49/135964682_5ddbf58cdd_b.jpg
+  imageAlt: "Mel"
+
+- url: http://www.flickr.com/photos/merlijnhoek/2826968159/
+  title: "Shetti // Nikkor 50mm 1.4 by Merlijn Hoek, on Flickr"
+  imageUrl: http://farm4.staticflickr.com/3063/2826968159_02de2d3771_b.jpg
+  imageAlt: "Shetti // Nikkor 50mm 1.4"
+
+- url: http://www.flickr.com/photos/aoa-/7295416372/
+  title: "Little kitty ♥ =^..^= ♥ by Viola &amp; Cats =^..^=, on Flickr"
+  imageUrl: http://farm9.staticflickr.com/8153/7295416372_988d3ed7cc_b.jpg
+  imageAlt: "Little kitty ♥ =^..^= ♥"
+
+- url: http://www.flickr.com/photos/dirigentens/4735888531/
+  title: "Geisha på fluff by Dirigentens, on Flickr"
+  imageUrl: http://farm5.staticflickr.com/4122/4735888531_5ee92b936a_b.jpg
+  imageAlt: "Geisha på fluff"
+
+- url: http://www.flickr.com/photos/sergiu_bacioiu/3932052676/
+  title: "Meaw Meaw by Sergiu Bacioiu, on Flickr"
+  imageUrl: http://farm4.staticflickr.com/3456/3932052676_491d8956de_b.jpg
+  imageAlt: "Meaw Meaw"
+
+- url: http://www.flickr.com/photos/malingering/356400109/
+  title: "Run Zumi! Run like the wind! by Malingering, on Flickr"
+  imageUrl: http://farm1.staticflickr.com/145/356400109_35eae35f53.jpg
+  imageAlt: "Run Zumi! Run like the wind!"
+
+- url: http://www.flickr.com/photos/sensual_shadows_photography/160031380/
+  title: "Put Me Down. I Am Not Finished Being Cute Yet ! by Sensual Shadows Photography, on Flickr"
+  imageUrl: http://farm1.staticflickr.com/44/160031380_8de071151c_b.jpg
+  imageAlt: "Put Me Down. I Am Not Finished Being Cute Yet !"
+
+- url: http://www.flickr.com/photos/sergiu_bacioiu/3930657923/
+  title: "Meaw by Sergiu Bacioiu, on Flickr"
+  imageUrl: http://farm3.staticflickr.com/2470/3930657923_0b0f00f833_b.jpg
+  imageAlt: "Meaw"
+
+- url: http://www.flickr.com/photos/aoa-/7352069826/
+  title: "Happy Caturday to all friends ! by Viola &amp; Cats =^..^=, on Flickr"
+  imageUrl: http://farm8.staticflickr.com/7078/7352069826_1e667da00b_b.jpg
+  imageAlt: "Happy Caturday to all friends !"
+
+- url: http://www.flickr.com/photos/jurvetson/7189326712/
+  title: "Put your paws up! by jurvetson, on Flickr"
+  imageUrl: http://farm8.staticflickr.com/7081/7189326712_1f206e8f11_b.jpg
+  imageAlt: "Put your paws up!"
+
+- url: http://www.flickr.com/photos/domiketu/4976097279/
+  title: "5 days by DomiKetu, on Flickr"
+  imageUrl: http://farm5.staticflickr.com/4083/4976097279_9e8493a825_b.jpg
+  imageAlt: "5 days"
+
+- url: http://www.flickr.com/photos/ametxa/2233228436/
+  title: "Yes, I did a cat once! by Ametxa, on Flickr"
+  imageUrl: http://farm3.staticflickr.com/2214/2233228436_d8e25f9079_b.jpg
+  imageAlt: "Yes, I did a cat once!"
+
+- url: http://www.flickr.com/photos/sergiu_bacioiu/4327564714/
+  title: "Meow Man by Sergiu Bacioiu, on Flickr"
+  imageUrl: http://farm3.staticflickr.com/2720/4327564714_ab1c8abe25_b.jpg
+  imageAlt: "Meow Man"
+
+- url: http://www.flickr.com/photos/sergiu_bacioiu/3953686888/
+  title: "Crazy Meow ~ RazorMonkey Magazine Cover ~ by Sergiu Bacioiu, on Flickr"
+  imageUrl: http://farm3.staticflickr.com/2542/3953686888_6bb1c91e09_b.jpg
+  imageAlt: "Crazy Meow ~ RazorMonkey Magazine Cover ~"
+
+- url: http://www.flickr.com/photos/fazen/9079179/
+  title: "studying... by fazen, on Flickr"
+  imageUrl: http://farm1.staticflickr.com/8/9079179_781bb2abcd_b.jpg
+  imageAlt: "studying..."
+
+- url: http://www.flickr.com/photos/merlijnhoek/2789604490/
+  title: "Our new kitten Shetti by Merlijn Hoek, on Flickr"
+  imageUrl: http://farm4.staticflickr.com/3260/2789604490_066dd1c786_b.jpg
+  imageAlt: "Our new kitten Shetti"
+
+- url: http://www.flickr.com/photos/aoa-/7469498942/
+  title: "Happy Caturday to all Friends ! by Viola &amp; Cats =^..^=, on Flickr"
+  imageUrl: http://farm8.staticflickr.com/7249/7469498942_0512058ce1_b.jpg
+  imageAlt: "Happy Caturday to all Friends !"
+
+- url: http://www.flickr.com/photos/sergiu_bacioiu/4394955222/
+  title: "Isolated cat on white background by Sergiu Bacioiu, on Flickr"
+  imageUrl: http://farm5.staticflickr.com/4032/4394955222_07c30ed3d6_b.jpg
+  imageAlt: "Isolated cat on white background"
+
+- url: http://www.flickr.com/photos/merlijnhoek/2791728529/
+  title: "Shetti sleeping by Merlijn Hoek, on Flickr"
+  imageUrl: http://farm4.staticflickr.com/3194/2791728529_423fa9aeb6_b.jpg
+  imageAlt: "Shetti sleeping"
+
+- url: http://www.flickr.com/photos/sausyn/983485076/
+  title: "kiss by sausyn, on Flickr"
+  imageUrl: http://farm2.staticflickr.com/1021/983485076_59814c9134_z.jpg?zz=1
+  imageAlt: "kiss"
+
+- url: http://www.flickr.com/photos/sicoactiva/93396555/
+  title: "me pareció ver un lindo gatito! by sicoactiva, on Flickr"
+  imageUrl: http://farm1.staticflickr.com/28/93396555_f197042b50_o.jpg
+  imageAlt: "me pareció ver un lindo gatito!"
+
+- url: http://www.flickr.com/photos/fourdoxn/1339194561/
+  title: "Furry Friday Kitten by Four Doxn, on Flickr"
+  imageUrl: http://farm2.staticflickr.com/1087/1339194561_9cffa33335_b.jpg
+  imageAlt: "Furry Friday Kitten"
+
+- url: http://www.flickr.com/photos/isolano/423026153/
+  title: "It's time to explore by isolano., on Flickr"
+  imageUrl: http://farm1.staticflickr.com/153/423026153_2f99a650f5_b.jpg
+  imageAlt: "It's time to explore"
+
+- url: http://www.flickr.com/photos/fmagnifici/2779869788/
+  title: "ari-sguardo by fmagnifici, on Flickr"
+  imageUrl: http://farm4.staticflickr.com/3204/2779869788_b904dd0342_z.jpg?zz=1
+  imageAlt: "ari-sguardo"
+
+- url: http://www.flickr.com/photos/bhenry/140596381/
+  title: "Aw Shucks by Barb Henry, on Flickr"
+  imageUrl: http://farm1.staticflickr.com/48/140596381_a771092e3f_o.jpg
+  imageAlt: "Aw Shucks"
+
+- url: http://www.flickr.com/photos/aoa-/7138386271/
+  title: "♥❤♥ Kittens ( =';'= ) by Viola &amp; Cats =^..^=, on Flickr"
+  imageUrl: http://farm8.staticflickr.com/7232/7138386271_4b016cce76_b.jpg
+  imageAlt: "♥❤♥ Kittens ( =';'= )"
+
+- url: http://www.flickr.com/photos/gloson/4595147656/
+  title: "Face to face in our dreams by Gloson, on Flickr"
+  imageUrl: http://farm4.staticflickr.com/3399/4595147656_b209cc1f9f_b.jpg
+  imageAlt: "Face to face in our dreams"
+
+- url: http://www.flickr.com/photos/damselfly58/4480845281/
+  title: "tilly by damselfly58 - moved yay!, on Flickr"
+  imageUrl: http://farm5.staticflickr.com/4030/4480845281_9016786cc3_o.jpg
+  imageAlt: "tilly"
+
+- url: http://www.flickr.com/photos/tambako/6124292403/
+  title: "Cute savannah kitten III by Tambako the Jaguar, on Flickr"
+  imageUrl: http://farm7.staticflickr.com/6065/6124292403_7aa9b11846_b.jpg
+  imageAlt: "Cute savannah kitten III"
+
+- url: http://www.flickr.com/photos/merlijnhoek/5214405108/
+  title: "Sinas loves the camera // red and white 6 weeks old kitten by Merlijn Hoek, on Flickr"
+  imageUrl: http://farm5.staticflickr.com/4087/5214405108_712a61dff3_b.jpg
+  imageAlt: "Sinas loves the camera // red and white 6 weeks old kitten"
+
+- url: http://www.flickr.com/photos/lokidude_pics/3876407782/
+  title: "Ummmmmm.. Nom Nom Nom by lokidude99, on Flickr"
+  imageUrl: http://farm4.staticflickr.com/3546/3876407782_a6b95265f0_b.jpg
+  imageAlt: "Ummmmmm.. Nom Nom Nom"
+
+- url: http://www.flickr.com/photos/geoftheref/3227445097/
+  title: "Yin & Yang by geoftheref, on Flickr"
+  imageUrl: http://farm4.staticflickr.com/3093/3227445097_aecc2f6f87_b.jpg
+  imageAlt: "Yin & Yang"

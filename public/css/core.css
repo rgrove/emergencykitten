@@ -1,0 +1,19 @@
+html {
+    background: #fff;
+    color: #333;
+    font: 14px/1.4 Helvetica, sans-serif;
+    text-align: center;
+}
+
+.license {
+    color: #afafaf;
+    font-size: 12px;
+}
+
+.license a {
+    color: inherit;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.license a:hover { text-decoration: underline; }
