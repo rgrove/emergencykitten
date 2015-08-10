@@ -29,12 +29,3 @@ a:hover { text-decoration: underline; }
     color: inherit;
     font-weight: bold;
 }
-
-.permalink { margin: 2em 0; }
-
-#permalink-input {
-    color: #888;
-    font-size: 12px;
-    width: 25em;
-    text-align: center;
-}

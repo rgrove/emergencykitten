@@ -1,41 +1,18 @@
 Emergency Kitten!
 =================
 
-This is the Node.js + Express app that powers <http://www.emergencykitten.com/>.
+This is the code behind <http://www.emergencykitten.com/>. It's an HTML page
+with some JavaScript. Because kittens are simple like that.
 
 
 Installing
 ----------
 
-1. Install Node.js 0.8.x from <http://nodejs.org/>.
-
-2. Install the Heroku Toolbelt from <https://toolbelt.heroku.com/>.
-
-3. Clone this git repo (fork it first if you plan to make changes).
+1. Clone this git repo (fork it first if you plan to make changes).
 
         $ git clone git://github.com/rgrove/emergencykitten.git
 
-4. Install dependencies using npm.
-
-        $ cd emergencykitten && npm install
-
-5. Start the local emergencykitten server.
-
-        $ foreman start
-
-6. Browse to <http://localhost:5000/> and you should see Emergency Kitten!
-
-
-Pull Requests
--------------
-
-Want to add a feature or fix a bug? If it's something small, just send a pull
-request. If it's something big, please get in touch and ask if I'm interested
-before working on it.
-
-I'm pretty picky about code quality and simplicity, so don't be alarmed if I
-ask you to change things or just say I'm not interested. If you're offended,
-maybe [a kitten](http://www.emergencykitten.com/) will help cheer you up?
+2. Open `index.html` in a browser and you should see Emergency Kitten!
 
 
 License
