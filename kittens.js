@@ -132,12 +132,6 @@ var kittens = [
     "imageAlt": "Shetti sleeping"
   },
   {
-    "url": "http://www.flickr.com/photos/sausyn/983485076/",
-    "title": "kiss by sausyn, on Flickr",
-    "imageUrl": "http://farm2.staticflickr.com/1021/983485076_59814c9134_z.jpg?zz=1",
-    "imageAlt": "kiss"
-  },
-  {
     "url": "http://www.flickr.com/photos/sicoactiva/93396555/",
     "title": "me pareció ver un lindo gatito! by sicoactiva, on Flickr",
     "imageUrl": "http://farm1.staticflickr.com/28/93396555_f197042b50_o.jpg",
