@@ -270,12 +270,6 @@ var kittens = [
     "imageAlt": "Harry at 5 weeks old"
   },
   {
-    "url": "http://www.simoncochranephotography.com/Nature/The-Menagerie/23523345_BTthbK#!i=1902036815&k=v2JGkLC&lb=1&s=A",
-    "title": "Moglet pretending to be Fruit.",
-    "imageUrl": "http://www.simoncochranephotography.com/Nature/The-Menagerie/i-v2JGkLC/0/L/MG3749-Edit-L.jpg",
-    "imageAlt": "Moglet pretending to be Fruit."
-  },
-  {
     "url": "http://romuald.smugmug.com/Nature-Natura/empty/1997168_m2qm6F#!i=102022589&k=u9wBN&lb=1&s=A",
     "title": "Lonely kitten (Boruja Nowa, Poland).Samotny kotek (Boruja Nowa, Polska).",
     "imageUrl": "http://romuald.smugmug.com/Nature-Natura/empty/DSC1425/102022589_u9wBN-L.jpg",
