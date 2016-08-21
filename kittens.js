@@ -276,28 +276,10 @@ var kittens = [
     "imageAlt": "Lonely kitten (Boruja Nowa, Poland).Samotny kotek (Boruja Nowa, Polska)."
   },
   {
-    "url": "http://www.aktpics.com/My-Galleries/Animals/njcattitudeorg-Cat-and-Kitten/4294311_H9zQ6d#!i=293613387&k=cUzj4&lb=1&s=A",
-    "title": "5/11/2008: Alice and her 7 kittens.",
-    "imageUrl": "http://www.aktpics.com/My-Galleries/Animals/njcattitudeorg-Cat-and-Kitten/njcattitude2008051147/293613387_cUzj4-L.jpg",
-    "imageAlt": "5/11/2008: Alice and her 7 kittens."
-  },
-  {
     "url": "http://www.carllengyel.com/Pets/Kittens-Cats/9711733_mNRP4V#!i=657756269&k=W5nxT&lb=1&s=A",
     "title": "- Four black and gray tabby cat kittens.",
     "imageUrl": "http://www.carllengyel.com/Pets/Kittens-Cats/2006Jun2Kittens/657756269_W5nxT-L-1.jpg",
     "imageAlt": "- Four black and gray tabby cat kittens."
-  },
-  {
-    "url": "http://www.aktpics.com/My-Galleries/Animals/njcattitudeorg-Cat-and-Kitten/4294311_H9zQ6d#!i=265630171&k=SEtZt&lb=1&s=A",
-    "title": "Christmas and her kittens: 03/13/2008 - 39 Days old.",
-    "imageUrl": "http://www.aktpics.com/My-Galleries/Animals/njcattitudeorg-Cat-and-Kitten/kittens2008031368/265630171_SEtZt-L.jpg",
-    "imageAlt": "Christmas and her kittens: 03/13/2008 - 39 Days old."
-  },
-  {
-    "url": "http://www.aktpics.com/My-Galleries/Animals/njcattitudeorg-Cat-and-Kitten/4294311_H9zQ6d#!i=258270142&k=6KEhb&lb=1&s=A",
-    "title": "Christmas and her kittens: Christmas and her kittens: 2/6/08 - 3 days old.",
-    "imageUrl": "http://www.aktpics.com/My-Galleries/Animals/njcattitudeorg-Cat-and-Kitten/Kittens200802064/258270142_6KEhb-L.jpg",
-    "imageAlt": "Christmas and her kittens: Christmas and her kittens: 2/6/08 - 3 days old."
   },
   {
     "url": "http://www.sharkbayte.com/Photography/2011-Daily-Photos/15280496_QJTL2X#!i=1381656376&k=5xTsnPJ&lb=1&s=A",
