@@ -1,18 +1,8 @@
-Emergency Kitten!
+Super Badass Corgis :D
 =================
 
-This is the code behind <http://www.emergencykitten.com/>. It's an HTML page
-with some JavaScript. Because kittens are simple like that.
-
-
-Installing
-----------
-
-1. Clone this git repo (fork it first if you plan to make changes).
-
-        $ git clone git://github.com/rgrove/emergencykitten.git
-
-2. Open `index.html` in a browser and you should see Emergency Kitten!
+This is the code behind <http://www.superbadasscorgis.com/>. It's an HTML page
+with some JavaScript. Because I cloned this repo and I'm lazy af.
 
 
 License
