@@ -1,6 +1,6 @@
 window._gaq = [["_setAccount", "UA-33711406-1"], ["_trackPageview"]];
 
-fetch("https://emergencykitten-api.herokuapp.com/")
+fetch("https://emergencykitten-api.angelnext.repl.co")
   .then((res) => res.json())
   .then((kittens) => {
     const kitten = kittens[Math.floor(Math.random() * kittens.length)];
