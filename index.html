@@ -1,46 +1,87 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<meta charset="utf-8">
-<title>Emergency Kitten!</title>
-<link rel="stylesheet" href="kittens.css">
+  <meta charset="utf-8" />
+  <title>Emergency Kitten!</title>
+  <link rel="stylesheet" href="kittens.css" />
 
-<script>
-  window._gaq = [['_setAccount', 'UA-33711406-1'], ['_trackPageview']];
-  (function(d, t) {
-    var g = d.createElement(t),
+  <script>
+    window._gaq = [["_setAccount", "UA-33711406-1"], ["_trackPageview"]];
+    (function (d, t) {
+      var g = d.createElement(t),
         s = d.getElementsByTagName(t)[0];
-    g.src = '//www.google-analytics.com/ga.js';
-    s.parentNode.insertBefore(g, s);
-  }(document, 'script'));
-</script>
+      g.src = "//www.google-analytics.com/ga.js";
+      s.parentNode.insertBefore(g, s);
+    })(document, "script");
+  </script>
 
-<div id="putakitteninme" class="centered">
-    <noscript>There would normally be a kitten here, but you disabled JavaScript and killed it.</noscript>
-</div>
+  <div id="putakitteninme" class="centered">
+    <noscript
+      >There would normally be a kitten here, but you disabled JavaScript and
+      killed it.</noscript
+    >
+  </div>
 
-<p class="license centered">
-    All photos are either under a <a href="http://creativecommons.org/licenses/">Creative Commons</a> license or were marked as shareable by their creators. Click on a photo to visit its original source.<br>
+  <p class="license centered">
+    All photos are either under a
+    <a href="http://creativecommons.org/licenses/">Creative Commons</a> license
+    or were marked as shareable by their creators. Click on a photo to visit its
+    original source.<br />
 
-    Comments? I'm <a href="https://twitter.com/yaypie/">@yaypie</a> on Twitter. Complaints? Maybe you need <a href="./">another kitten</a>.
-</p>
+    Comments? I'm <a href="https://twitter.com/yaypie/">@yaypie</a> on Twitter.
+    Complaints? Maybe you need <a href="./">another kitten</a>.
+  </p>
+  <div class="centered">
+    <button onclick="iv()" id="iv">Keep urrrr coming!</button>
+  </div>
 
-<a href="https://github.com/rgrove/emergencykitten/"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
+  <a href="https://github.com/rgrove/emergencykitten/"
+    ><img
+      style="position: absolute; top: 0; right: 0; border: 0"
+      src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"
+      alt="Fork me on GitHub"
+  /></a>
 
-<script src="kittens.js"></script>
-<script>
-(function (win, doc) {
-    var kitten = kittens[Math.floor(Math.random() * kittens.length)];
-    var image  = doc.createElement('img');
-    var link   = doc.createElement('a');
+  <script src="kittens.js"></script>
+  <script>
+    function kitten(win, doc) {
+      var kitten = kittens[Math.floor(Math.random() * kittens.length)];
+      var image = doc.createElement("img");
+      var link = doc.createElement("a");
 
-    link.className = 'kitten';
-    link.href      = kitten.url;
+      link.className = "kitten";
+      link.href = kitten.url;
 
-    image.alt       = kitten.imageAlt;
-    image.className = 'kitten-image';
-    image.src       = kitten.imageUrl;
+      image.alt = kitten.imageAlt;
+      image.className = "kitten-image";
+      image.src = kitten.imageUrl;
 
-    link.appendChild(image);
-    doc.getElementById('putakitteninme').appendChild(link);
-}(this, document));
-</script>
+      link.appendChild(image);
+      doc.getElementById("putakitteninme").appendChild(link);
+    }
+  </script>
+  <script>
+    (function () {
+      kitten(window, document);
+    })();
+  </script>
+  <script>
+    function iv() {
+      if (window.interval) {
+        window.clearInterval(interval);
+        window.interval = null;
+        document.getElementById("iv").innerHTML = "Keep urrrr coming!";
+      } else {
+        document.getElementById("iv").innerHTML = "Gimme a purrreak!";
+        window.interval = setInterval(() => {
+          var kitty = document.querySelector(".kitten");
+          if (kitty) {
+            kitty.remove();
+          }
+
+          kitten(this, document);
+        }, 2800);
+      }
+    }
+  </script>
+</html>
+

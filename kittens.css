@@ -1,31 +1,45 @@
 html {
-    background: #fff;
-    color: #333;
+  background: #fff;
+  color: #333;
 }
 
-body, input {
-    font: 14px/1.4 Helvetica, sans-serif;
+body,
+input {
+  font: 14px/1.4 Helvetica, sans-serif;
 }
 
 a {
-    color: blue;
-    text-decoration: none;
+  color: blue;
+  text-decoration: none;
 }
 
-a:hover { text-decoration: underline; }
+a:hover {
+  text-decoration: underline;
+}
 
-.centered { text-align: center; }
+.centered {
+  text-align: center;
+}
 
 .kitten-image {
-    min-height: 600px;
+  min-height: 600px;
 }
 
 .license {
-    color: #afafaf;
-    font-size: 12px;
+  color: #afafaf;
+  font-size: 12px;
 }
 
 .license a {
-    color: inherit;
-    font-weight: bold;
+  color: inherit;
+  font-weight: bold;
 }
+
+#iv {
+  font-size: 1.2rem;
+  background: #e3f2f1;
+  border-radius: 8px;
+  border: 1px solid #a8b1ba;
+  color: #68706b;
+}
+
