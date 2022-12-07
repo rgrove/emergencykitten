@@ -310,5 +310,119 @@ var kittens = [
     "title": "kittens (8) by Jane Williams, on Flickr",
     "imageUrl": "http://farm4.staticflickr.com/3765/9301063123_0bac05c8ac_b.jpg",
     "imageAlt": "Two orange tabby kittens playing in grass."
+  },
+  {
+    "url": "https://commons.wikimedia.org/wiki/File:5-day-old_kittens_09.jpg",
+    "title": "A 5 days old kitten, by 0x010C on Wikimedia Commons",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/5-day-old_kittens_09.jpg/1280px-5-day-old_kittens_09.jpg",
+    "imageAlt": "A tiny sleeping tabby kitten. It looks content."
+  },
+  {
+    "url": "https://commons.wikimedia.org/wiki/File:5-day-old_kittens_11.jpg",
+    "title": "5 days old kittens, by 0x010C on Wikimedia Commons",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/5-day-old_kittens_11.jpg/1280px-5-day-old_kittens_11.jpg",
+    "imageAlt": "3 tabby kittens sleeping on each other."
+  },
+  {
+    "url": "https://commons.wikimedia.org/wiki/File:Tortie_kitten_yawning.jpg",
+    "title": "This is an 8 week old tortie kitten, resting on her owner’s laptop, by Av3553 on Wikimedia Commons",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Tortie_kitten_yawning.jpg/1536px-Tortie_kitten_yawning.jpg",
+    "imageAlt": "A tortoiseshell kitten standing on the keyboard of a laptop and yawning."
+  },
+  {
+    "url": "https://commons.wikimedia.org/wiki/File:Tabby_kitten_playing.jpg",
+    "title": "About 8 weeks old tabby kitten playing, by Tar Dániel on Wikimedia Commons",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Tabby_kitten_playing.jpg/1280px-Tabby_kitten_playing.jpg",
+    "imageAlt": "A lighter colored tabby kitten crouching and possibly preparing to pounce."
+  },
+  {
+    "url": "https://commons.wikimedia.org/wiki/File:Feral_tuxedo_kitten_2.jpg",
+    "title": "Feral tuxedo kitten, 4 weeks old.",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Feral_tuxedo_kitten_2.jpg/1026px-Feral_tuxedo_kitten_2.jpg",
+    "imageAlt": "A tuxedo kitten with a white jaw and a white paw hiding behind some furniture."
+  },
+  {
+    "url": "https://commons.wikimedia.org/wiki/File:Cats_kitten.jpg",
+    "title": "My kungi, by Resureshkumar on Wikimedia Commons",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/da/Cats_kitten.jpg",
+    "imageAlt": "A newborn tabby kitten with many white spots fitting in the palm of a hand."
+  },
+  {
+    "url": "https://commons.wikimedia.org/wiki/File:Charlie_the_kitten,_age_6_weeks.jpg",
+    "title": "Gray tuxedo kitten six weeks old, by P4l4d1um on Wikimedia Commons",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Charlie_the_kitten%2C_age_6_weeks.jpg/1280px-Charlie_the_kitten%2C_age_6_weeks.jpg",
+    "imageAlt": "A gray tuxedo kitten sitting in front of a gray sofa."
+  },
+  {
+    "url": "https://commons.wikimedia.org/wiki/File:4_weeks_old_funny_kitten.jpg",
+    "title": "Four-weeks old kitten with a funny expression by Broc on Wikimedia Commons",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/4_weeks_old_funny_kitten.jpg/1280px-4_weeks_old_funny_kitten.jpg",
+    "imageAlt": "A calico kitten blepping."
+  },
+  {
+    "url": "https://commons.wikimedia.org/wiki/File:British_Short_Hair.jpeg",
+    "title": "3 week old Male Tabby, by Djnickers on Wikimedia Commons",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d4/British_Short_Hair.jpeg",
+    "imageAlt": "A light-colored tabby kitten staring at the camera."
+  },
+  {
+    "url": "https://commons.wikimedia.org/wiki/File:4_days_old_kittens.jpg",
+    "title": "4 days old kittens, by EL HOUCEIN OUAKOUZ on Wikimedia Commons",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/4_days_old_kittens.jpg/1280px-4_days_old_kittens.jpg",
+    "imageAlt": "Two mostly white kittens with tabby blotches sleeping on a black blanket."
+  },
+  {
+    "url": "https://commons.wikimedia.org/wiki/File:1-month-old_kittens_11.jpg",
+    "title": "1-month-old kittens sleeping on each others, by 0x010C on Wikimedia Commons",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/1-month-old_kittens_11.jpg/1280px-1-month-old_kittens_11.jpg",
+    "imageAlt": "Some tabby kittens sleeping on top of each other."
+  },
+  {
+    "url": "https://commons.wikimedia.org/wiki/File:1-month-old_kittens_20.jpg",
+    "title": "A 1 month old kitten, by 0x010C on Wikimedia Commons",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/1-month-old_kittens_20.jpg/1280px-1-month-old_kittens_20.jpg",
+    "imageAlt": "A tabby kitten sleeping on a towel with a barely visible black kitten right next to it."
+  },
+  {
+    "url": "https://commons.wikimedia.org/wiki/File:1-month-old_kittens_22.jpg",
+    "title": "A 1 month old kitten, by 0x010C on Wikimedia Commons",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/1-month-old_kittens_22.jpg/1280px-1-month-old_kittens_22.jpg",
+    "imageAlt": "A black kitten curiously studying something above it."
+  },
+  {
+    "url": "https://commons.wikimedia.org/wiki/File:1-month-old_kittens_36.jpg",
+    "title": "A 1 month old kitten yawning, by 0x010C on Wikimedia Commons",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/1-month-old_kitten_36.jpg/1280px-1-month-old_kitten_36.jpg",
+    "imageAlt": "A black kitten yawning, with the sun shining in its face."
+  },
+  {
+    "url": "https://commons.wikimedia.org/wiki/File:1-month-old_kittens_46.jpg",
+    "title": "A 1 month old kitten, by 0x010C on Wikimedia Commons",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/1-month-old_kitten_46.jpg/1280px-1-month-old_kitten_46.jpg",
+    "imageAlt": "A black kitten resting on its back and stretching."
+  },
+  {
+    "url": "https://commons.wikimedia.org/wiki/File:1-month-old_kittens_25.jpg",
+    "title": "A 1 month old kitten, by 0x010C on Wikimedia Commons",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/1-month-old_kittens_25.jpg/1280px-1-month-old_kittens_25.jpg",
+    "imageAlt": "A tabby kitten sitting in a basket and sniffing its rim."
+  },
+  {
+    "url": "https://commons.wikimedia.org/wiki/File:1-month-old_kitten_41.jpg",
+    "title": "A 1 month old kitten, by 0x010C on Wikimedia Commons",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/1-month-old_kitten_41.jpg/1280px-1-month-old_kitten_41.jpg",
+    "imageAlt": "A tabby kitten stretching out on the ground in a playful manner."
+  },
+  {
+    "url": "https://commons.wikimedia.org/wiki/File:1-month-old_kitten_43.jpg",
+    "title": "A 1 month old kitten, by 0x010C on Wikimedia Commons",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/1-month-old_kitten_43.jpg/1280px-1-month-old_kitten_43.jpg",
+    "imageAlt": "A tabby kitten playing with a cork."
+  },
+  {
+    "url": "https://commons.wikimedia.org/wiki/File:Kitten_Cat.jpg",
+    "title": "Kitten with googly eye on their forehead, by SPP1996 on Wikimedia Commons",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Kitten_Cat.jpg/1280px-Kitten_Cat.jpg",
+    "imageAlt": "A black and white kitten with a googly eye on their forehead."
   }
 ];
