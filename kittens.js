@@ -270,18 +270,6 @@ var kittens = [
     "imageAlt": "Harry at 5 weeks old"
   },
   {
-    "url": "http://romuald.smugmug.com/Nature-Natura/empty/1997168_m2qm6F#!i=102022589&k=u9wBN&lb=1&s=A",
-    "title": "Lonely kitten (Boruja Nowa, Poland).Samotny kotek (Boruja Nowa, Polska).",
-    "imageUrl": "http://romuald.smugmug.com/Nature-Natura/empty/DSC1425/102022589_u9wBN-L.jpg",
-    "imageAlt": "Lonely kitten (Boruja Nowa, Poland).Samotny kotek (Boruja Nowa, Polska)."
-  },
-  {
-    "url": "http://www.carllengyel.com/Pets/Kittens-Cats/9711733_mNRP4V#!i=657756269&k=W5nxT&lb=1&s=A",
-    "title": "- Four black and gray tabby cat kittens.",
-    "imageUrl": "http://www.carllengyel.com/Pets/Kittens-Cats/2006Jun2Kittens/657756269_W5nxT-L-1.jpg",
-    "imageAlt": "- Four black and gray tabby cat kittens."
-  },
-  {
     "url": "http://www.sharkbayte.com/Photography/2011-Daily-Photos/15280496_QJTL2X#!i=1381656376&k=5xTsnPJ&lb=1&s=A",
     "title": "July 13, 2011-These are two of the kittens from a few days ago. Their mother moved all of them to the neighbor's house. Well that night we had a lot of rain, the next morning I found all four of the kittens back in my yard, inside a huge planter that was on it's side and off the ground, they are protected from the rain and the sun. The mother cat just amazes me.  Jasper my pup is not happy with the situation. (194:365)Thank you all so much for all the wonderful comments and response to my picture yesterday, it was overwhelming!",
     "imageUrl": "http://www.sharkbayte.com/Photography/2011-Daily-Photos/i-5xTsnPJ/0/L/20110712-MG0024-Edit-L.jpg",
