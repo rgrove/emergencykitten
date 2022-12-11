@@ -1,23 +1,48 @@
 html {
-  background: #fff;
-  color: #333;
+  --bg-color-default: #fff;
+  --color-accent: #0066dd;
+  --color-text-default: #333;
+  --color-text-light: #afafaf;
+  background: var(--bg-color-default);
+  color: var(--color-text-default);
+  font: 18px/1.6 system-ui, Helvetica, sans-serif;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
 }
 
-body, input {
-  font: 14px/1.4 Helvetica, sans-serif;
+@media (prefers-color-scheme: dark) {
+  html {
+    --bg-color-default: #222;
+    --color-text-default: #ddd;
+  }
+}
+
+body {
+  margin: 0;
 }
 
 a {
-  color: blue;
+  color: var(--color-accent);
   text-decoration: none;
 }
 
-a:hover { text-decoration: underline; }
+a:hover {
+  text-decoration: underline;
+}
 
-.centered { text-align: center; }
+footer {
+  max-width: 76em;
+  padding: 0 8px;
+  margin: 0 auto;
+}
+
+.centered {
+  text-align: center;
+}
 
 .kitten-image {
-  min-height: 600px;
+  max-height: 100lvh;
+  max-width: 100lvw;
 }
 
 .license {
