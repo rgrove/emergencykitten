@@ -144,12 +144,6 @@ const kittens = [
     "imageAlt": "Furry Friday Kitten"
   },
   {
-    "url": "https://www.flickr.com/photos/isolano/423026153/",
-    "title": "It's time to explore by isolano., on Flickr",
-    "imageUrl": "https://farm1.staticflickr.com/153/423026153_2f99a650f5_b.jpg",
-    "imageAlt": "It's time to explore"
-  },
-  {
     "url": "https://www.flickr.com/photos/bhenry/140596381/",
     "title": "Aw Shucks by Barb Henry, on Flickr",
     "imageUrl": "https://farm1.staticflickr.com/48/140596381_a771092e3f_o.jpg",
