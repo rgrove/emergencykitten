@@ -6,7 +6,7 @@
 
 Kittens can come from two places:
 
-1.   A small set of curated kittens that are hard-coded in `kittens.js`.
+1.   A small set of curated kittens that are hard-coded in `src/kittens.json`.
 
 2.   A [Flickr](https://www.flickr.com/) search for interesting CC-licensed or public domain photos tagged with `kitten` or `kittens`.
 
