@@ -9,13 +9,13 @@
 </main>
 
 <footer class="license centered">
-  <p>All photos are either under a <a href="http://creativecommons.org/licenses/">Creative Commons</a> license or were marked as shareable by their creators. Click on a photo to visit its original source. Site&nbsp;by&nbsp;<a href="https://wonko.com">Ryan&nbsp;Grove</a>. Reload for another kitten!
+  <p>All photos are either under a <a href="https://creativecommons.org/licenses/">Creative Commons</a> license or were marked as shareable by their creators. Click to visit the original source. Not a kitten? Someone may have mistagged it on Flickr. Site&nbsp;by&nbsp;<a href="https://wonko.com">Ryan&nbsp;Grove</a>.
 </footer>
 
 <script src="kittens.js"></script>
 <script>
-((win, doc) => {
-  let kitten = kittens[Math.floor(Math.random() * kittens.length)];
+(async (win, doc) => {
+  let kitten = await getRandomKitten();
   let image = doc.createElement('img');
   let link = doc.createElement('a');
 
