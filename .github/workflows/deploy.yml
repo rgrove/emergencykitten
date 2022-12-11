@@ -1,0 +1,55 @@
+name: Deploy
+
+on:
+  push:
+    branches: ["gh-pages"]
+
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  id-token: write
+  pages: write
+
+concurrency:
+  cancel-in-progress: true
+  group: pages
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Set up GitHub Pages
+        uses: actions/configure-pages@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: lts/*
+
+      - uses: pnpm/action-setup@c3b53f6a16e57305370b4ae5a540c2077a1d50dd # v2.2.4
+        with:
+          version: ^7.18.1
+          run_install: true
+
+      - name: Build the site
+        run: pnpm build
+
+      - name: Upload artifacts to GitHub Pages
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: ./public
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v1

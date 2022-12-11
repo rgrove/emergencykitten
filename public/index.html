@@ -3,7 +3,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>🐈 Emergency Kitten!</title>
-<link rel="stylesheet" href="kittens.css">
+<link rel="stylesheet" href="dist/kittens.css">
 
 <main>
   <noscript>There would normally be a kitten here, but you disabled JavaScript and killed it.</noscript>
@@ -20,9 +20,10 @@
   </ul>
 </footer>
 
-<script src="kittens.js"></script>
-<script>
-(async (win, doc) => {
+<script type="module">
+import { getRandomKitten } from './dist/kittens.js';
+
+(async (doc) => {
   let kitten = await getRandomKitten();
   let image = doc.createElement('img');
   let link = doc.createElement('a');
@@ -40,5 +41,5 @@
 
   link.appendChild(image);
   doc.querySelector('main').appendChild(link);
-})(this, document);
+})(document);
 </script>

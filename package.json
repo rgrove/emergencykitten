@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "build": "esbuild src/kittens.js --analyze --bundle --format=esm --minify --outdir=public/dist --sourcemap --target=es2021",
+    "clean": "rimraf public/dist",
+    "start": "esbuild src/kittens.js --bundle --format=esm --outdir=public/dist --servedir=public --sourcemap --target=es2021"
+  },
+  "devDependencies": {
+    "esbuild": "^0.16.4",
+    "rimraf": "^3.0.2"
+  }
+}
