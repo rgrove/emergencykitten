@@ -2,9 +2,57 @@ import './kittens.css';
 import kittens from './kittens.json';
 
 const flickrBlockedIds = new Set([
+  '32885627128', // https://www.flickr.com/photos/153584064@N07/32885627128
   '48944060348', // https://www.flickr.com/photos/75885098@N05/48944060348
   '49186129532', // https://www.flickr.com/photos/14056438@N08/49186129532
   '52463011905', // https://www.flickr.com/photos/72616463@N00/52463011905
+]);
+
+const flickrBlockedOwners = new Set([
+  '14056438@N08', // mistagged photos
+]);
+
+const flickrLicenses = new Map([
+  ['1', {
+    name: 'CC BY-NC-SA 2.0',
+    url: 'https://creativecommons.org/licenses/by-nc-sa/2.0/',
+  }],
+  ['2', {
+    name: 'CC BY-NC 2.0',
+    url: 'https://creativecommons.org/licenses/by-nc/2.0/',
+  }],
+  ['3', {
+    name: 'CC BY-NC-ND 2.0',
+    url: 'https://creativecommons.org/licenses/by-nc-nd/2.0/',
+  }],
+  ['4', {
+    name: 'CC BY 2.0',
+    url: 'https://creativecommons.org/licenses/by/2.0/',
+  }],
+  ['5', {
+    name: 'CC BY-SA 2.0',
+    url: 'https://creativecommons.org/licenses/by-sa/2.0/',
+  }],
+  ['6', {
+    name: 'CC BY-ND 2.0',
+    url: 'https://creativecommons.org/licenses/by-nd/2.0/',
+  }],
+  ['7', {
+    name: 'No known copyright restrictions',
+    url: 'https://www.flickr.com/commons/usage/'
+  }],
+  ['8', {
+    name: 'US Government Work',
+    url: 'https://www.usa.gov/government-works',
+  }],
+  ['9', {
+    name: 'CC0 1.0',
+    url: 'https://creativecommons.org/publicdomain/zero/1.0/',
+  }],
+  ['10', {
+    name: 'Public Domain Mark 1.0',
+    url: 'https://creativecommons.org/publicdomain/mark/1.0/',
+  }],
 ]);
 
 /**
@@ -27,21 +75,28 @@ export async function getRandomKitten() {
   let flickrPhotos = await fetchFlickrPhotos();
 
   if (flickrPhotos.length > 0) {
-    let attempts = 0;
     let photo;
+    let retries = 0;
 
     // Some Flickr photos don't have a `url_l` size available, and some Flickr
     // photos should never be displayed. Try up to 25 times to find a photo
     // that'll work before giving up.
     do {
-      attempts += 1;
       photo = flickrPhotos[Math.floor(Math.random() * flickrPhotos.length)];
-    } while (!photo.url_l && !flickrBlockedIds.has(photo.id) && attempts < 25)
 
-    if (photo.url_l) {
+      if (!photo.url_l || flickrBlockedIds.has(photo.id) || flickrBlockedOwners.has(photo.owner)) {
+        photo = null;
+      }
+    } while (!photo && (retries += 1) < 25)
+
+    if (photo?.url_l) {
       return {
+        authorName: photo.ownername,
+        authorUrl: `https://www.flickr.com/photos/${photo.owner}`,
+        license: flickrLicenses.get(photo.license),
         imageAlt: photo.title,
         imageUrl: photo.url_l,
+        title: photo.title,
         url: `https://www.flickr.com/photos/${photo.owner}/${photo.id}`,
       };
     }
@@ -64,7 +119,7 @@ async function fetchFlickrPhotos() {
     api_key: 'c1e552ce2698888886d28bd83d717d4c',
     content_type: '1', // photos only
     content_types: '0', // non-virtual photos
-    extras: 'url_l',
+    extras: 'license,owner_name,url_l',
     format: 'json',
     license: '1,2,3,4,5,6,7,8,9,10', // CC licensed or public domain
     media: 'photos',

@@ -3,6 +3,7 @@ html {
   --color-accent: #0066dd;
   --color-text-default: #333;
   --color-text-light: #afafaf;
+  --text-size-small: 0.7em;
   background: var(--bg-color-default);
   color: var(--color-text-default);
   font: 18px/1.6 system-ui, Helvetica, sans-serif;
@@ -18,11 +19,14 @@ html {
 }
 
 body {
+  color: var(--color-text-light);
   margin: 0;
+  -webkit-text-size-adjust: 100%;
 }
 
 a {
-  color: var(--color-accent);
+  color: inherit;
+  font-weight: bold;
   text-decoration: none;
 }
 
@@ -30,26 +34,31 @@ a:hover {
   text-decoration: underline;
 }
 
-footer {
-  color: #afafaf;
-  font-size: 0.7em;
-  margin: 0 auto;
-  max-width: 76ch;
-  padding: 0 1em 1em;
+main {
   text-align: center;
-  -webkit-text-size-adjust: 100%;
 }
 
-:root:not([data-loaded]) footer {
+small {
+  font-size: inherit;
+}
+
+.footer {
+  font-size: var(--text-size-small);
+  margin: 0 auto;
+  max-width: 76ch;
+  padding: 1em;
+  text-align: center;
+}
+
+:root:not([data-loaded]) .footer {
   display: none;
 }
 
-footer a {
-  color: inherit;
-  font-weight: bold;
+.footer p {
+  margin: 0;
 }
 
-footer ul {
+.footer ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -58,20 +67,28 @@ footer ul {
   padding: 0;
 }
 
-footer ul li:not(:first-child):before {
+.footer ul li:not(:first-child):before {
   content: '•';
-  padding: 0 1ch;
+  padding: 0 4px;
 }
 
-main {
+.license {
+  font-size: var(--text-size-small);
+  margin: 0 auto;
+  max-width: 76ch;
+  padding: 1em 1em 0;
   text-align: center;
 }
 
-.kitten {
+.photo {
+  margin: 0 auto;
+}
+
+.kittenLink {
   display: block;
 }
 
-.kitten-image {
+.kittenImage {
   display: block;
   margin: 0 auto;
   max-height: 100lvh;

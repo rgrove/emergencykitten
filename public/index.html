@@ -6,12 +6,26 @@
 <link rel="stylesheet" href="dist/kittens.css">
 
 <main>
+  <template id="photo">
+    <figure class="photo">
+      <a class="kittenLink" href="">
+        <img class="kittenImage" alt="" src="">
+      </a>
+    </figure>
+  </template>
+
+  <template id="license">
+    <footer class="license">
+      <small><a class="title" href=""></a> by <a class="author" href=""></a> is licensed under <a class="licenseType" href="" rel="license"></a>.</small>
+    </footer>
+  </template>
+
   <noscript>There would normally be a kitten here, but you disabled JavaScript and killed it.</noscript>
 </main>
 
-<footer>
+<footer class="footer">
   <p>
-    Photos are either under a <a href="https://creativecommons.org/licenses/">Creative Commons</a> license or were marked as shareable by their creators. Not a kitten? Someone may have mistagged it on Flickr. <a href="./">Reload</a> for another one!
+    Not a kitten? Someone may have mistagged it on Flickr.
   </p>
 
   <ul>
@@ -25,21 +39,36 @@ import { getRandomKitten } from './dist/kittens.js';
 
 (async (doc) => {
   let kitten = await getRandomKitten();
-  let image = doc.createElement('img');
-  let link = doc.createElement('a');
+  let photo = doc.importNode(doc.querySelector('#photo').content, true);
 
-  link.className = 'kitten';
-  link.href = kitten.url;
+  photo.querySelector('.kittenLink').href = kitten.url;
 
-  image.alt = kitten.imageAlt;
-  image.className = 'kitten-image';
-  image.src = kitten.imageUrl;
+  let kittenImage = photo.querySelector('.kittenImage');
 
-  image.addEventListener('load', () => {
+  kittenImage.alt = kitten.imageAlt;
+  kittenImage.src = kitten.imageUrl;
+  kittenImage.addEventListener('load', () => {
     doc.documentElement.dataset.loaded = true;
   }, { once: true });
 
-  link.appendChild(image);
-  doc.querySelector('main').appendChild(link);
+  if (kitten.license) {
+    let license = doc.importNode(doc.querySelector('#license').content, true);
+
+    let author = license.querySelector('.author');
+    author.href = kitten.authorUrl;
+    author.textContent = kitten.authorName;
+
+    let licenseType = license.querySelector('.licenseType');
+    licenseType.href = kitten.license.url;
+    licenseType.textContent = kitten.license.name;
+
+    let title = license.querySelector('.title');
+    title.href = kitten.url;
+    title.textContent = kitten.title;
+
+    photo.appendChild(license);
+  }
+
+  doc.querySelector('main').appendChild(photo);
 })(document);
 </script>
