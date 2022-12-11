@@ -409,6 +409,12 @@ const kittens = [
   }
 ];
 
+const flickrBlockedIds = new Set([
+  '48944060348', // https://www.flickr.com/photos/75885098@N05/48944060348
+  '49186129532', // https://www.flickr.com/photos/14056438@N08/49186129532
+  '52463011905', // https://www.flickr.com/photos/72616463@N00/52463011905
+]);
+
 /**
  * Returns data for a random kitten photo.
  *
@@ -430,12 +436,13 @@ async function getRandomKitten() {
     let attempts = 0;
     let photo;
 
-    // Some Flickr photos don't have a `url_l` size available. If this happens,
-    // try up to 25 times to find a photo that'll work before giving up.
+    // Some Flickr photos don't have a `url_l` size available, and some Flickr
+    // photos should never be displayed. Try up to 25 times to find a photo
+    // that'll work before giving up.
     do {
       attempts += 1;
       photo = flickrPhotos[Math.floor(Math.random() * flickrPhotos.length)];
-    } while (!photo.url_l && attempts < 25)
+    } while (!photo.url_l && !flickrBlockedIds.has(photo.id) && attempts < 25)
 
     if (photo.url_l) {
       return {
@@ -468,7 +475,7 @@ async function fetchFlickrPhotos() {
     license: '1,2,3,4,5,6,7,8,9,10', // CC licensed or public domain
     media: 'photos',
     nojsoncallback: '1',
-    per_page: '25',
+    per_page: '50',
     sort: 'interestingness-desc', // tends to produce good photos, and each search seems to return a different set
     tags: 'kitten,kittens'
   }).toString();
