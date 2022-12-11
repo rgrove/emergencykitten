@@ -449,6 +449,11 @@ async function getRandomKitten() {
   return randomKitten;
 }
 
+/**
+ * Fetches a set of kitten photos from Flickr.
+ *
+ * If the Flickr API call fails for any reason, an empty array will be returned.
+ */
 async function fetchFlickrPhotos() {
   let url = new URL('https://www.flickr.com/services/rest');
 
@@ -465,10 +470,17 @@ async function fetchFlickrPhotos() {
     nojsoncallback: '1',
     per_page: '25',
     sort: 'interestingness-desc', // tends to produce good photos, and each search seems to return a different set
-    tags: 'kitten'
+    tags: 'kitten,kittens'
   }).toString();
 
-  let response = await fetch(url);
+  let response;
+
+  try {
+    response = await fetch(url);
+  } catch (err) {
+    console.error('Flickr API request failed', err);
+    return [];
+  }
 
   if (!response.ok) {
     console.error('Flickr API request failed', response.status, response.statusText);
