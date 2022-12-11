@@ -1,18 +1,26 @@
 <!doctype html>
 <html lang="en">
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>🐈 Emergency Kitten!</title>
 <link rel="stylesheet" href="kittens.css">
 
-<main id="putakitteninme" class="centered">
+<main>
   <noscript>There would normally be a kitten here, but you disabled JavaScript and killed it.</noscript>
 </main>
 
-<footer class="license centered">
-  <p>All photos are either under a <a href="https://creativecommons.org/licenses/">Creative Commons</a> license or were marked as shareable by their creators. Click to visit the original source. Not a kitten? Someone may have mistagged it on Flickr. Site&nbsp;by&nbsp;<a href="https://wonko.com">Ryan&nbsp;Grove</a>.
+<footer>
+  <p>
+    Photos are either under a <a href="https://creativecommons.org/licenses/">Creative Commons</a> license or were marked as shareable by their creators. Not a kitten? Someone may have mistagged it on Flickr. <a href="./">Reload</a> for another one!
+  </p>
+
+  <ul>
+    <li>Site by <a href="https://wonko.com">Ryan Grove</a></li>
+    <li><a href="https://github.com/rgrove/emergencykitten">Source on GitHub</a></li>
+  </ul>
 </footer>
 
-<script src="kittens.js?v1"></script>
+<script src="kittens.js"></script>
 <script>
 (async (win, doc) => {
   let kitten = await getRandomKitten();
@@ -26,7 +34,11 @@
   image.className = 'kitten-image';
   image.src = kitten.imageUrl;
 
+  image.addEventListener('load', () => {
+    doc.documentElement.dataset.loaded = true;
+  }, { once: true });
+
   link.appendChild(image);
-  doc.getElementById('putakitteninme').appendChild(link);
+  doc.querySelector('main').appendChild(link);
 })(this, document);
 </script>

@@ -31,26 +31,49 @@ a:hover {
 }
 
 footer {
-  max-width: 76em;
-  padding: 0 8px;
+  color: #afafaf;
+  font-size: 0.7em;
   margin: 0 auto;
+  max-width: 76ch;
+  padding: 0 1em 1em;
+  text-align: center;
+  -webkit-text-size-adjust: 100%;
 }
 
-.centered {
+:root:not([data-loaded]) footer {
+  display: none;
+}
+
+footer a {
+  color: inherit;
+  font-weight: bold;
+}
+
+footer ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer ul li:not(:first-child):before {
+  content: '•';
+  padding: 0 1ch;
+}
+
+main {
   text-align: center;
 }
 
+.kitten {
+  display: block;
+}
+
 .kitten-image {
+  display: block;
+  margin: 0 auto;
   max-height: 100lvh;
   max-width: 100lvw;
-}
-
-.license {
-  color: #afafaf;
-  font-size: 12px;
-}
-
-.license a {
-  color: inherit;
-  font-weight: bold;
 }
