@@ -1,38 +1,21 @@
-Emergency Kitten!
-=================
+# Emergency Kitten!
 
-This is the code behind <http://www.emergencykitten.com/>. It's an HTML page
-with some JavaScript. Because kittens are simple like that.
+[Emergency Kitten](https://www.emergencykitten.com) shows you a random kitten on every pageview. Because sometimes you just need a kitten.
 
+## Kitten Sources
 
-Installing
-----------
+Kittens can come from two places:
 
-1. Clone this git repo (fork it first if you plan to make changes).
+1.   A small set of curated kittens that are hard-coded in `kittens.js`.
 
-        $ git clone git://github.com/rgrove/emergencykitten.git
+2.   A [Flickr](https://www.flickr.com/) search for interesting CC-licensed or public domain photos tagged with `kitten` or `kittens`.
 
-2. Open `index.html` in a browser and you should see Emergency Kitten!
+Exactly which place a kitten comes from on any given pageview is completely random. If the Flickr API call fails for any reason, a kitten from the curated set will be used instead.
 
+From time to time you may see a photo that doesn't contain a kitten. This just means someone mistagged it on Flickr. Sorry about that.
 
-License
--------
+## Contributing
 
-Copyright (c) 2012 Ryan Grove.
+The best way to contribute is to upload pictures of kittens to Flickr! At this time, we don't need any more curated kittens.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy of
-this software and associated documentation files (the "Software"), to deal in
-the Software without restriction, including without limitation the rights to
-use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
-the Software, and to permit persons to whom the Software is furnished to do so,
-subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
-FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
-COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
-IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
-CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+We're also not looking for new features or new data sources at this time.
