@@ -1,0 +1,103 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "kittens.schema.json",
+  "title": "Emergency Kitten Data Schema",
+  "type": "object",
+  "required": [
+    "$schema",
+    "kittens"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "format": "uri-reference"
+    },
+    "kittens": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "author",
+          "image",
+          "license",
+          "title",
+          "url"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "author": {
+            "type": "object",
+            "required": [
+              "name",
+              "url"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "name": {
+                "type": "string",
+                "maxLength": 50,
+                "title": "Name of the author of this photo."
+              },
+              "url": {
+                "type": "string",
+                "format": "uri",
+                "title": "URL of the author of this photo."
+              }
+            }
+          },
+          "image": {
+            "type": "object",
+            "required": [
+              "alt",
+              "url"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "alt": {
+                "type": "string",
+                "title": "Alternative text for this photo."
+              },
+              "url": {
+                "type": "string",
+                "format": "uri",
+                "title": "Image file URL for this photo."
+              }
+            }
+          },
+          "license": {
+            "type": "object",
+            "required": [
+              "name",
+              "url"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "name": {
+                "type": "string",
+                "maxLength": 100,
+                "title": "Name of this photo's license."
+              },
+              "url": {
+                "type": "string",
+                "format": "uri",
+                "title": "URL of this photo's license."
+              }
+            }
+          },
+          "title": {
+            "type": "string",
+            "maxLength": 100,
+            "title": "Title of this kitten photo."
+          },
+          "url": {
+            "type": "string",
+            "format": "uri",
+            "title": "Original source URL where this kitten photo can be found."
+          }
+        }
+      },
+      "uniqueItems": true
+    }
+  }
+}
