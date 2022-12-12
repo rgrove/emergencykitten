@@ -45,8 +45,8 @@ import { getRandomKitten } from './dist/kittens.js';
 
   let kittenImage = photo.querySelector('.kittenImage');
 
-  kittenImage.alt = kitten.imageAlt;
-  kittenImage.src = kitten.imageUrl;
+  kittenImage.alt = kitten.image.alt;
+  kittenImage.src = kitten.image.url;
   kittenImage.addEventListener('load', () => {
     doc.documentElement.dataset.loaded = true;
   }, { once: true });
@@ -55,8 +55,8 @@ import { getRandomKitten } from './dist/kittens.js';
     let license = doc.importNode(doc.querySelector('#license').content, true);
 
     let author = license.querySelector('.author');
-    author.href = kitten.authorUrl;
-    author.textContent = kitten.authorName;
+    author.href = kitten.author.url;
+    author.textContent = kitten.author.name;
 
     let licenseType = license.querySelector('.licenseType');
     licenseType.href = kitten.license.url;
