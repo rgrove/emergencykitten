@@ -4,6 +4,10 @@ import { flickrSearch, getKittenDataFromFlickrSearchResult } from './lib/flickr'
 
 const { kittens } = kittenData;
 
+/**
+ * Flickr photo IDs that should never be displayed. Sometimes photos are
+ * mistagged or contain non-cute content that we don't want to display.
+ */
 const flickrBlockedIds = new Set([
   '32885627128', // https://www.flickr.com/photos/153584064@N07/32885627128
   '48944060348', // https://www.flickr.com/photos/75885098@N05/48944060348
@@ -12,6 +16,10 @@ const flickrBlockedIds = new Set([
   '52463011905', // https://www.flickr.com/photos/72616463@N00/52463011905
 ]);
 
+/**
+ * Flickr photo owners whose photos should never be displayed. These are
+ * accounts with lots of mistagged or non-cute photos.
+ */
 const flickrBlockedOwners = new Set([
   '14056438@N08', // mistagged photos
   '72616463@N00', // gory photos

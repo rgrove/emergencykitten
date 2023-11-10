@@ -1,6 +1,10 @@
 const flickrApiKey = 'c1e552ce2698888886d28bd83d717d4c';
 const flickrApiUrl = 'https://www.flickr.com/services/rest';
 
+/**
+ * Map of Flickr license IDs to attribution data. Only these licenses will be
+ * included when searching for photos.
+ */
 const flickrLicenses = new Map([
   ['1', {
     name: 'CC BY-NC-SA 2.0',
