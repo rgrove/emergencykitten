@@ -80,6 +80,10 @@ small {
   text-align: center;
 }
 
+:root:not([data-loaded]) .license {
+  display: none;
+}
+
 .photo {
   margin: 0 auto;
 }
