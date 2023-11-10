@@ -64,7 +64,7 @@ export async function flickrSearch(params) {
     content_types: '0', // non-virtual photos
     extras: 'license,owner_name,url_l',
     format: 'json',
-    license: '1,2,3,4,5,6,7,8,9,10', // CC licensed or public domain
+    license: Array.from(flickrLicenses.keys()).join(','),
     media: 'photos',
     nojsoncallback: '1',
     per_page: '50',
