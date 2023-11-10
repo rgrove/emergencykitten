@@ -8,11 +8,13 @@ const flickrBlockedIds = new Set([
   '32885627128', // https://www.flickr.com/photos/153584064@N07/32885627128
   '48944060348', // https://www.flickr.com/photos/75885098@N05/48944060348
   '49186129532', // https://www.flickr.com/photos/14056438@N08/49186129532
+  '52462827519', // https://www.flickr.com/photos/72616463@N00/52462827519
   '52463011905', // https://www.flickr.com/photos/72616463@N00/52463011905
 ]);
 
 const flickrBlockedOwners = new Set([
   '14056438@N08', // mistagged photos
+  '72616463@N00', // gory photos
 ]);
 
 /**
