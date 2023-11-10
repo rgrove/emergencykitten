@@ -1,11 +1,15 @@
 {
+  "engines": {
+    "node": ">=18.17.0"
+  },
+  "packageManager": "pnpm@8.10.2",
   "scripts": {
     "build": "esbuild src/kittens.js --analyze --bundle --format=esm --minify --outdir=public/dist --sourcemap --target=es2021",
     "clean": "rimraf public/dist",
     "start": "esbuild src/kittens.js --bundle --format=esm --outdir=public/dist --servedir=public --sourcemap --target=es2021"
   },
   "devDependencies": {
-    "esbuild": "^0.16.4",
-    "rimraf": "^3.0.2"
+    "esbuild": "^0.19.5",
+    "rimraf": "^5.0.5"
   }
 }
